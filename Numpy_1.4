@@ -1,0 +1,22 @@
+# 1) Importação da biblioteca
+import numpy as np
+import math
+
+# 4) Iteração em um Numpy array
+array = np.array([5.5, 3.8, 9, 7.5, 10.0, 9.9, 8.5])
+
+# calculando media
+total = 0
+for valores in array:
+    total += valores  # Somando os valores
+
+media = total / len(array)
+print("A média dos valores é:", media)
+
+# calcule o desvio do padrão
+soma = 0
+for valores in array:
+    soma += (valores - media) ** 2
+
+desvio_padrao = (soma / len(array)) ** 0.5
+print("O desvio padrão dos valores é:", desvio_padrao)
